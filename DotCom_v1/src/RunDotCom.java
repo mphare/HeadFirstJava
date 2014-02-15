@@ -8,7 +8,7 @@ public class RunDotCom
     String resultString = "Game Running";
     GameHelper gameHelper = new GameHelper();
 
-    SimpleDotCom dot = new SimpleDotCom();
+    DotCom dot = new DotCom();
     int startLocation = (int) (Math.random() * 5);
 
     int[] locationCells = { startLocation, startLocation + 1, startLocation + 2 };
