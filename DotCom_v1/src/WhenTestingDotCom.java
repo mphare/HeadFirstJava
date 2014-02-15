@@ -18,7 +18,7 @@ public class WhenTestingDotCom
 
     String result = dot.checkYourself(userGuess);
 
-    assertEquals(result, "hit");
+    assertEquals("hit", result);
 
   }
 
@@ -35,7 +35,57 @@ public class WhenTestingDotCom
 
     String result = dot.checkYourself(userGuess);
 
-    assertEquals(result, "miss");
+    assertEquals("miss", result);
+
+  }
+
+  @Test
+  public void ShouldKill()
+  {
+    SimpleDotCom dot = new SimpleDotCom();
+
+    int[] locations = { 2, 3, 4 };
+
+    dot.setLocationCells(locations);
+
+    String userGuess = "2";
+    dot.checkYourself(userGuess);
+
+    userGuess = "3";
+    dot.checkYourself(userGuess);
+
+    userGuess = "1";
+    dot.checkYourself(userGuess);
+
+    userGuess = "4";
+    String result = dot.checkYourself(userGuess);
+
+    assertEquals("kill", result);
+
+  }
+
+  @Test
+  public void ShouldNotKill()
+  {
+    SimpleDotCom dot = new SimpleDotCom();
+
+    int[] locations = { 2, 3, 4 };
+
+    dot.setLocationCells(locations);
+
+    String userGuess = "2";
+    dot.checkYourself(userGuess);
+
+    userGuess = "3";
+    dot.checkYourself(userGuess);
+
+    userGuess = "1";
+    dot.checkYourself(userGuess);
+
+    userGuess = "5";
+    String result = dot.checkYourself(userGuess);
+
+    assertEquals("miss", result);
 
   }
 
