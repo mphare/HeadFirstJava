@@ -2,36 +2,21 @@ import java.util.ArrayList;
 
 public class DotCom
 {
-  private ArrayList<String> locationCells = new ArrayList<String>();
-  int                       numOfHits     = 0;
+  private ArrayList<String> locationCells;
+  private String            name = null;
 
-  public String checkYourself(String stringGuess)
+  public void setName(String name)
   {
-    int guess = Integer.parseInt(stringGuess);
-    String result = "miss";
-
-    int index = locationCells.indexOf(stringGuess);
-    if (index >= 0)
-    {
-      locationCells.remove(index);
-      if (locationCells.isEmpty())
-      {
-        result = "kill";
-      } else
-      {
-        result = "hit";
-      }
-    }
-    System.out.println(result);
-    return result;
+    this.name = name;
   }
 
-  public void setLocationCells(int[] locations)
+  public String getName()
   {
+    return this.name;
+  }
 
-    for (int loc : locations)
-    {
-      locationCells.add(String.valueOf(loc));
-    }
+  public void setLocationCells(ArrayList<String> loc)
+  {
+    locationCells = loc;
   }
 }
