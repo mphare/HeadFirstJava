@@ -8,8 +8,9 @@ import javax.swing.JLabel;
 
 public class TwoButtons
 {
-  JFrame frame;
-  JLabel label;
+  JFrame  frame;
+  JLabel  label;
+  boolean b = false;
 
   public static void main(String[] args)
   {
@@ -45,7 +46,12 @@ public class TwoButtons
   {
     public void actionPerformed(ActionEvent event)
     {
-      label.setText("Ouch!");
+      if (b)
+        label.setText("Changed Label");
+      else
+        label.setText("My Label");
+
+      b = !b;
     }
   }
 
