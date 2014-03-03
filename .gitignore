@@ -31,7 +31,11 @@ local.properties
 # PDT specific
 .buildpath
 
-.class
+# -----------------
+# Java
+# -----------------
+*.class 
+
 
 # -----------------
 # Package Files
