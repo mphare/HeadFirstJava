@@ -10,13 +10,16 @@ public class ThreadTestDrive
 
     myThread.start();
 
-    System.out.println("Thread Started");
-    try
+    for (int i = 0; i < 10; i++)
     {
-      Thread.sleep(2000);
-    } catch (Exception ex)
-    {
-      ex.printStackTrace();
+      System.out.println("Main Thread: " + i);
+      try
+      {
+        Thread.sleep(2000);
+      } catch (Exception ex)
+      {
+        ex.printStackTrace();
+      }
     }
     System.out.println("back in main");
 
