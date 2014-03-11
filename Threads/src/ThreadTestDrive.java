@@ -1,5 +1,8 @@
+import org.apache.log4j.Logger;
+
 public class ThreadTestDrive
 {
+  static Logger log = Logger.getLogger(ThreadTestDrive.class.getName());
 
   public static void main(String[] args)
   {
