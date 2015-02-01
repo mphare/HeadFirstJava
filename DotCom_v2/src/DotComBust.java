@@ -28,7 +28,7 @@ public class DotComBust
       ArrayList<String> newLocation = helper.placeDotCom(3);
       dc.setLocationCells(newLocation);
     }
-    System.out.println("Try to sink them int he fewest number of moves.");
+    System.out.println("Try to sink them in the fewest number of moves.");
   }
 
   private void startPlaying()
