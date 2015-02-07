@@ -1,5 +1,7 @@
 package test;
 
+import java.util.ArrayList;
+
 public class RunMe
 {
   int whichOne = 0;
@@ -91,6 +93,13 @@ public class RunMe
     eg[1].showValues();
     eg[2].showValues();
     eg[3].showValues();
+
+    ArrayList<Guitar> myGuitarArray = new ArrayList<Guitar>();
+
+    myGuitarArray.add(eg[0]);
+    myGuitarArray.add(eg[1]);
+
+    myGuitarArray.get(1).showValues();
 
   }
 

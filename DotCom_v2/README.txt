@@ -1,1 +1,1 @@
-Chapter 5 Extra Strength Methods
+Chapter 6 Using the Java Library
