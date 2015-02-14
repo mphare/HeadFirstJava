@@ -31,11 +31,7 @@ public class ElectricGuitar extends Guitar
 
   public void showValues()
   {
-    System.out.println("My Guitar:");
-    System.out.println("Brand: " + brand);
-    System.out.println("Model: " + model);
-    System.out.println("Type: " + type);
-    System.out.println("Number of Strings: " + numberOfStrings);
+    super.showValues();
     System.out.println("Number of Pickups: " + numberOfPickups);
   }
 

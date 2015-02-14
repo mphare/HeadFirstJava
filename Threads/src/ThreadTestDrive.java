@@ -9,6 +9,7 @@ public class ThreadTestDrive
     Runnable threadJob = new MyRunnable();
     Thread myThread = new Thread(threadJob);
 
+    log.debug("About to start");
     myThread.setName("MyThread");
 
     myThread.start();

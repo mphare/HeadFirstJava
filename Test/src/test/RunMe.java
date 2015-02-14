@@ -89,6 +89,8 @@ public class RunMe
     eg[2] = new ElectricGuitar("Gibson", "SG", 2, 6);
     eg[3] = myGuitar3;
 
+    System.out.println("Now, walk the Array List");
+
     eg[0].showValues();
     eg[1].showValues();
     eg[2].showValues();
@@ -98,8 +100,23 @@ public class RunMe
 
     myGuitarArray.add(eg[0]);
     myGuitarArray.add(eg[1]);
+    myGuitarArray.add(eg[2]);
+    myGuitarArray.add(eg[3]);
 
-    myGuitarArray.get(1).showValues();
+    int arraySize = myGuitarArray.size();
+
+    System.out.println("Now, for loop the Array List");
+    for (int i = 0; i < arraySize; i++)
+    {
+      myGuitarArray.get(i).showValues();
+    }
+
+    System.out.println("Now, foreach the Array List");
+
+    for (Guitar myGuitar : myGuitarArray)
+    {
+      myGuitar.showValues();
+    }
 
   }
 
