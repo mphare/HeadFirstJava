@@ -25,6 +25,10 @@ local.properties
 # Eclipse launch config
 .launch
 
+# IntelliJ
+*.iml
+.idea
+
 # CDT specific
 .cproject
 
