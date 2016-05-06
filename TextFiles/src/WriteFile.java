@@ -7,7 +7,7 @@ public class WriteFile
   {
     try
     {
-      String str = "This is what I intend to write to the file";
+      String str = "This is what I intend to write to the file this time";
 
       FileWriter writer = new FileWriter("Foo.txt");
       writer.write(str);
